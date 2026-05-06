@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maleja Dancer | EPK Profesional</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=Montserrat:wght@300;400;600&display=swap');
+
+        :root {
+            --deep-black: #050505;
+            --electric-purple: #7b2cbf;
+            --vibrant-purple: #9d4edd;
+            --accent-purple: #c77dff;
+        }
+
+        body {
+            background-color: var(--deep-black);
+            color: #ffffff;
+            font-family: 'Montserrat', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Syncopate', sans-serif;
+            letter-spacing: 3px;
+        }
+
+        .text-purple-gradient {
+            background: linear-gradient(to right, #e0aaff, #9d4edd);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .glass-panel {
+            background: rgba(20, 20, 20, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(157, 78, 221, 0.2);
+        }
+
+        .photo-card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 4px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .photo-card img {
+            transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .photo-card:hover img {
+            transform: scale(1.1) rotate(1deg);
+        }
+
+        .btn-primary {
+            background: linear-gradient(45deg, #5a189a, #9d4edd);
+            box-shadow: 0 4px 15px rgba(123, 44, 191, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(123, 44, 191, 0.5);
+        }
+
+        .role-badge {
+            background: rgba(123, 44, 191, 0.15);
+            border: 1px solid var(--electric-purple);
+            padding: 4px 12px;
+            font-size: 0.7rem;
+            border-radius: 2px;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Hero Section -->
+    <section class="relative h-screen flex items-center justify-center">
+        <!-- Imagen de fondo (Hero) usando una de tus fotos de performance -->
+        <div class="absolute inset-0 z-0">
+            <img src="20221207_163639.jpg" alt="Fondo Performance Maleja" class="w-full h-full object-cover opacity-50 grayscale hover:grayscale-0 transition-all duration-1000">
+            <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+        </div>
+
+        <div class="relative z-10 text-center px-4">
+            <p class="text-purple-400 font-bold tracking-[0.6em] mb-4 text-xs md:text-sm">PRESS KIT DIGITAL</p>
+            <h1 class="text-5xl md:text-8xl font-bold mb-6">MALEJA <span class="text-purple-gradient italic">DANCER</span></h1>
+            <div class="flex flex-wrap justify-center gap-3 mb-10 max-w-2xl mx-auto">
+                <span class="role-badge">Intérprete</span>
+                <span class="role-badge">Coreógrafa</span>
+                <span class="role-badge">Directora Artística</span>
+                <span class="role-badge">Performer</span>
+            </div>
+            <a href="#contacto" class="btn-primary px-10 py-4 rounded-sm font-bold uppercase text-xs tracking-widest">Contrataciones</a>
+        </div>
+    </section>
+
+    <!-- Perfil Artístico -->
+    <section class="py-24 px-6">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+            <div class="photo-card shadow-2xl">
+                <!-- Tu foto de perfil principal -->
+                <img src="Captura de pantalla 2026-04-15 011023.jpg" alt="Maleja Dancer Perfil" class="w-full h-full object-cover">
+            </div>
+            <div>
+                <h2 class="text-3xl font-bold mb-8 flex items-center gap-4">
+                    <span class="w-12 h-[2px] bg-purple-500"></span>
+                    BIO <span class="text-purple-500">ARTÍSTICA</span>
+                </h2>
+                <p class="text-gray-300 leading-loose text-lg mb-6">
+                    Estudiante de noveno semestre en **Danza y Dirección Coreográfica** de la Corporación Universitaria Cenda. Con más de 8 años de trayectoria activa en la industria, me defino como una artista versátil que entiende el movimiento como una herramienta de transformación social.
+                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div class="glass-panel p-4">
+                        <h4 class="text-purple-400 font-bold text-sm mb-1 uppercase">Experiencia</h4>
+                        <p class="text-xs text-gray-400">8+ años en la industria dancística nacional.</p>
+                    </div>
+                    <div class="glass-panel p-4">
+                        <h4 class="text-purple-400 font-bold text-sm mb-1 uppercase">Poblaciones</h4>
+                        <p class="text-xs text-gray-400">Infantil, juvenil, adulto mayor y discapacidad.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portafolio Visual (Galería con tus fotos) -->
+    <section class="py-20 bg-zinc-950">
+        <div class="max-w-7xl mx-auto px-6 text-center mb-16">
+            <h2 class="text-2xl font-bold tracking-widest">GALERÍA DE <span class="text-purple-500">PROYECTOS</span></h2>
+        </div>
+        
+        <div class="columns-1 md:columns-2 lg:columns-3 gap-4 space-y-4 px-4">
+            <!-- Usando tus fotos adjuntas -->
+            <div class="photo-card break-inside-avoid">
+                <img src="20221207_163600.jpg" alt="Performance Maleja" class="w-full">
+            </div>
+            <div class="photo-card break-inside-avoid">
+                <img src="Captura de pantalla 2026-04-28 114439.jpg" alt="Ensayo Coreográfico" class="w-full">
+            </div>
+            <div class="photo-card break-inside-avoid">
+                <img src="20230206_085547.jpg" alt="Clase de Danza" class="w-full">
+            </div>
+            <div class="photo-card break-inside-avoid">
+                <img src="FB_IMG_1646934069897.jpg" alt="Evento Social" class="w-full">
+            </div>
+            <div class="photo-card break-inside-avoid">
+                <img src="IMG-20221224-WA0047.jpg" alt="Maleja Dancer" class="w-full">
+            </div>
+            <div class="photo-card break-inside-avoid">
+                <img src="Captura de pantalla 2026-04-28 120530.jpg" alt="Backstage" class="w-full">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto Directo -->
+    <footer id="contacto" class="py-24 bg-black text-center relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-purple-500 to-transparent opacity-30"></div>
+        
+        <h2 class="text-4xl font-bold mb-4 uppercase tracking-tighter">Conectemos</h2>
+        <p class="text-gray-400 mb-12 max-w-md mx-auto px-4">Para colaboraciones artísticas, workshops o producciones coreográficas en Colombia.</p>
+        
+        <div class="flex flex-col md:flex-row justify-center gap-6 items-center px-4">
+            <a href="https://wa.me/573194430740" class="glass-panel px-8 py-6 rounded-lg group hover:bg-purple-900/20 transition-all w-full max-w-xs">
+                <i class="fa-brands fa-whatsapp text-3xl mb-4 text-green-500 group-hover:scale-110 transition-transform"></i>
+                <p class="font-bold text-lg">+57 3194430740</p>
+                <p class="text-xs text-gray-500 uppercase mt-1">WhatsApp Profesional</p>
+            </a>
+            
+            <a href="https://instagram.com/malejadancer" class="glass-panel px-8 py-6 rounded-lg group hover:bg-purple-900/20 transition-all w-full max-w-xs">
+                <i class="fa-brands fa-instagram text-3xl mb-4 text-pink-500 group-hover:scale-110 transition-transform"></i>
+                <p class="font-bold text-lg">@malejadancer</p>
+                <p class="text-xs text-gray-500 uppercase mt-1">Instagram Portfolio</p>
+            </a>
+        </div>
+
+        <div class="mt-20">
+            <img src="Screenshot_20250103_180520_WhatsApp.jpg" alt="Sello Personal" class="w-16 h-16 object-cover rounded-full mx-auto grayscale opacity-40 border border-purple-900">
+            <p class="text-[10px] text-zinc-600 mt-6 tracking-[0.3em]">CENDA • DIRECCIÓN COREOGRÁFICA • 2024</p>
+        </div>
+    </footer>
+
+</body>
+</html>
